@@ -56,7 +56,34 @@ header .tagline {
     color: var(--white);
     margin-top: -1rem;
 }
-
+.menu-buttons {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: lowercase;
+}
+.menu-toggle-button {
+    display: flex;
+    align-items: center;
+}
+.signin-signup a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+.signin-signup a:first-of-type {
+    color: var(--dark);
+    background-color: var(--accent);
+}
+.signin-signup a:nth-of-type(2) {
+    color: var(--white);
+}
+.signin-signup a:hover {
+    background-color: var(--hover);
+    color: var(--dark);
+}
 /* Hero Banner */
 .inner-container-hero {
     max-width: 400px;
@@ -92,7 +119,6 @@ header .tagline {
     padding: 0.75rem 1rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 .hero-banner .centered {
     text-align: center;
