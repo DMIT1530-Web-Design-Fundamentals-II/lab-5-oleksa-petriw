@@ -250,7 +250,7 @@ footer h3 {
     font-weight: normal;
     text-transform: uppercase;
 }
-footer h3:first-of-type {
+footer .signup-container h3 {
     color: var(--white);
 }
 footer ul {
@@ -280,5 +280,19 @@ footer .disclaimer {
 @media screen and (min-width: 50rem) {
     .parallax {
         background-image: url('../img/splash.webp');
+    }
+
+    .signup-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin-bottom: 2rem;
+        column-gap: 2rem;
     }
 }
